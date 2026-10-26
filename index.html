@@ -3,27 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAD Midterm Project - GPA Calculator</title>
+    <title>GPA Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h2>Student GPA Calculator</h2>
-        <form id="gpaForm">
-            <div class="input-group">
-                <label for="subjectName">Subject Name:</label>
-                <input type="text" id="subjectName" required>
-            </div>
-            <div class="input-group">
-                <label for="subjectGrade">Grade (e.g., 1.0 - 5.0):</label>
-                <input type="number" id="subjectGrade" step="0.01" min="1.0" max="5.0" required>
-            </div>
-            <div class="input-group">
-                <label for="subjectUnits">Units:</label>
-                <input type="number" id="subjectUnits" min="1" max="5" required>
-            </div>
-            <button type="submit" id="addBtn">Add Subject</button>
-        </form>
+        <h1>GPA Calculator</h1>
+        
+        <div class="form-group">
+            <label for="subjectName">Subject Name:</label>
+            <input type="text" id="subjectName" placeholder="Enter subject name">
+        </div>
+
+        <div class="form-group">
+            <label for="subjectGrade">Grade (1.0 - 5.0):</label>
+            <input type="number" id="subjectGrade" step="0.1" min="1.0" max="5.0" placeholder="Enter grade">
+        </div>
+
+        <div class="form-group">
+            <label for="subjectUnits">Units:</label>
+            <input type="number" id="subjectUnits" min="1" placeholder="Enter units">
+        </div>
+
+        <button id="addBtn">Add Subject</button>
+        <button id="clearBtn">Clear All</button>
 
         <table id="subjectTable">
             <thead>
@@ -36,10 +39,9 @@
             <tbody></tbody>
         </table>
 
-        <div class="summary">
-            <h3>Total GPA: <span id="gpaResult">0.00</span></h3>
+        <div class="result-container">
+            <h3>GPA: <span id="gpaResult">0.00</span></h3>
         </div>
-        <button id="clearBtn">Clear All</button>
     </div>
 
     <script src="script.js"></script>
