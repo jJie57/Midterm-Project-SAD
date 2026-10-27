@@ -2,35 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GPA Calculator - SAD Midterm</title>
+    <title>GPA Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>GPA Calculator</h1>
-        <div class="input-group">
-            <input type="text" id="subjectName" placeholder="Subject Name">
-            <input type="number" id="subjectGrade" placeholder="Grade (e.g., 1.5, 85)" step="0.1">
-            <input type="number" id="subjectUnits" placeholder="Units" value="3">
-            <button id="addBtn">Add Subject</button>
-        </div>
-        
         <table id="gradeTable">
             <thead>
-                <tr>
-                    <th>Subject</th>
-                    <th>Grade</th>
-                    <th>Units</th>
-                </tr>
+                <tr><th>Subject</th><th>Grade</th><th>Units</th></tr>
             </thead>
             <tbody></tbody>
         </table>
-
         <div class="result-box">
             <h3>Total GPA: <span id="gpaResult">0.00</span></h3>
         </div>
-        <button id="clearBtn">Clear All</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GPA Calculator</h1>
+        <table id="gradeTable">
+            <thead>
+                <tr><th>Subject</th><th>Grade</th><th>Units</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="result-box">
+            <h3>Total GPA: <span id="gpaResult">0.00</span></h3>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
